@@ -1,3 +1,16 @@
+'use strict';
+
 /**
- * Created by spandanak on 6/29/2016.
+ * @ngdoc function
+ * @name sampleApp1App.directive:ngAudioRecorder
+ * @description
+ * # ngAudioRecorder
+ * Controller of the sampleApp1App
  */
+angular.module('sampleApp1App')
+  .directive('ngAudioRecorder', function () {
+    return {
+      restrict : 'AE',
+      templateURL : 'views/about.html'
+    };
+  });

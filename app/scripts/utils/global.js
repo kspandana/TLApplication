@@ -11,9 +11,6 @@
 'use strict';
 
 /* exported Global */
-var $scope = (function(){
-  
-})();
 var Global = (function() {
 
 	/**

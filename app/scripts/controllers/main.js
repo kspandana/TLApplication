@@ -23,7 +23,7 @@ angular.module('sampleApp1App')
 
                     AuthenticationService.SetCredentials($scope.username, $scope.password);
                     Global.userCredentials.USERID = $scope.username;
-                    $location.path('/parent');
+                    $location.path('/dashboard');
                     $scope.dataLoading = false;
      			}
      			else {
@@ -39,16 +39,16 @@ angular.module('sampleApp1App')
 
 
     }])
-    .config(['$routeProvider', function ($routeProvider, recorderServiceProvider) {
+    .config(['$routeProvider', function ($routeProvider) {
 
     $routeProvider
         .when('/login', {
             controller: 'MainCtrl',
             templateUrl: 'views/main.html'
         })
-        .when('/parent', {
-            controller: 'parentCtrl',
-            templateUrl: 'views/Parent_HomePage.html'
+        .when('/dashboard', {
+            controller: 'dashboardCtrl',
+            templateUrl: 'views/dashboard.html'
         })
         .when('/group', {
             controller: 'groupCtrl',
@@ -74,10 +74,19 @@ angular.module('sampleApp1App')
         controller: 'editCtrl',
         templateUrl: 'views/edit.html'
       })
-      .when('/about', {
-        controller: 'DemoController',
-        templateUrl: 'views/about.html'
+      .when('/chapterPage', {
+        controller: 'chapterPageCtrl',
+        templateUrl: 'views/chapter_page.html'
       })
+      .when('/topics', {
+        controller: 'recordCtrl',
+        templateUrl: 'views/Topics.html'
+      })
+      .when('/rec_dashboard', {
+        controller: 'recDashboardCtrl',
+        templateUrl: 'views/rec_dashboard.html'
+      })
+
 
 
 
@@ -85,7 +94,7 @@ angular.module('sampleApp1App')
 }])
 
 .run(['$rootScope', '$location', '$cookieStore', '$http',
-    function ($rootScope, $location, $cookieStore, $http, registerParent) {
+    function ($rootScope, $location, $cookieStore, $http) {
 
         // keep user logged in after page refresh
         $rootScope.globals = $cookieStore.get('globals') || {};

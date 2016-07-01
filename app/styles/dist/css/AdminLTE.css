@@ -13,10 +13,6 @@
 html,
 body {
   min-height: 100%;
-  background: #d2d6de;
-  /*background: #E0E5EC url(/styles/dist/img/login_bg.jpg) no-repeat 50% 50%;*/
-  /*background-size: cover;*/
-
 }
 .layout-boxed html,
 .layout-boxed body {
