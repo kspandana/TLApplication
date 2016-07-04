@@ -13,7 +13,7 @@
     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
       <!-- Logo -->
-      <a href="#dashboard" class="logo"> <span class="logo-lg"><img src="/styles/dist/img/logo_header.png"  class="img-responsive"></span> </a>
+      <a href="#/dashboard" class="logo"> <span class="logo-lg"><img src="/styles/dist/img/logo_header.png"  class="img-responsive"></span> </a>
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
 
@@ -176,7 +176,7 @@
           </li>
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">
               <img src="/styles/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
               <span class="hidden-xs">Rama Krishnan</span>
             </a>
@@ -220,8 +220,8 @@
     </section>
 <ol class="breadcrumb">
 
-          <li><a href="#dashboard"><i class="fa fa-dashboard"></i>Subjects</a></li>
-           <li><a href="#chapterPage"><i class="fa fa-dashboard"></i>English</a></li>
+          <li><a href="#/dashboard"><i class="fa fa-dashboard"></i>Subjects</a></li>
+           <li><a href="#/chapterPage"><i class="fa fa-dashboard"></i>English</a></li>
            <li class="active">The Mask</li> </ol>
     <!-- Main content -->
     <section class="content">
@@ -249,12 +249,7 @@
       </form>
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
-
-
-
-
-
-        <h4>Source  <span class="pull-right"><a href="#" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg3" style="color:#FFF;">Select</a></span> </h4>
+        <h4>Source  <span class="pull-right"><a class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg3" style="color:#FFF;">Select</a></span> </h4>
 
 
           <div class="checkbox icheck">
@@ -277,12 +272,6 @@
               <input type="checkbox" > Teachers
             </label>
              </div>
-
-
-
-
-
-
     </section>
     </div>
     <!-- /.sidebar -->
@@ -377,21 +366,14 @@
                   <td>None</td>
                   <td>
                   <div class="btn-group" data-toggle="tooltip" data-placement="right" title="" data-original-title="Request for Recording"> <a type="button" href="" class="btn btn-warning" data-toggle="tooltip"><span class="glyphicon glyphicon-hand-right"></span></a>
-
-                                    </div>
+                  </div>
               </td>
                 </tr>
               </table>
-
             </div>
-
-
-
             </div>
           </div>
-
         </div>
-
         <div class="col-xs-3">
             <div class="container">
   <h3>In this Chapter</h3>
@@ -408,16 +390,14 @@
           <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">History of Mankind</a></li>
           <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">Vyakaran</a></li>
         </ul>
-        <!--<divclass="panel-collapse collapse">-->
+        <!--<div class="panel-collapse collapse">-->
           <ul class="list-group" ng-show="RecentlyListenedsub">
             <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">Number system1</a></li>
             <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">History of Mankind2</a></li>
             <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">Vyakaran3</a></li>
           </ul>
-
         <!--</div>-->
         <div class="panel-footer"><a data-toggle="collapse" id="dots" ng-click="toggle_visibility()"><span class="glyphicon glyphicon-option-horizontal"></span></a></div>
-
       </div>
 
       <div class="panel-heading list-group-item">
@@ -457,23 +437,14 @@
         </ul>
 
         <div class="panel-footer"><a data-toggle="collapse" ng-click="toggle_shared()"><span class="glyphicon glyphicon-option-horizontal"></span></a></div>
-
-
       </div>
-
     </div>
   </div>
-
-
-
 </div>
       </div>
       <!-- /.row -->
       <!-- Main row -->
-
       <!-- /.row (main row) -->
-
-
     <!-- /.content -->
   </div>
   </section>
@@ -575,7 +546,7 @@
 
 
                   <h2 style="font-family: sans-serif; text-align: center; width: 60px; border-radius: 20px;
-        border: solid 2px #333; padding: 20px 10px;" ng-if="recorder.status.isRecording">
+                        border: solid 2px #333; padding: 20px 10px;" ng-if="recorder.status.isRecording">
                     {{recorder.elapsedTime > 9 ? recorder.elapsedTime : ('0'+recorder.elapsedTime)}}
                   </h2>
 

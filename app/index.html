@@ -1,4 +1,5 @@
-<!doctype html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
 <html>
   <head>
     <meta charset="utf-8">
@@ -10,6 +11,13 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
+    <link type="text/css" href="style.css" />
+    <!--[If IE]>
+    <link type="text/css" href="IEHacks.css" />
+    <![endif]-->
+    <!--[if !IE]>
+    <link type="text/css" href="NonIEHacks.css" />
+    <![endif]-->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
      <link rel="stylesheet" href="/styles/bootstrap/css/bootstrap.css" />
@@ -90,15 +98,15 @@
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <!--<script>-->
-       <!--!function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){-->
-       <!--(A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),-->
-       <!--r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)-->
-       <!--}(window,document,'script','https://www.google-analytics.com/analytics.js','ga');-->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-       <!--ga('create', 'UA-XXXXX-X');-->
-       <!--ga('send', 'pageview');-->
-    <!--</script>-->
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -124,6 +132,7 @@
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="bower_components/wavesurfer.js/dist/wavesurfer.min.js"></script>
     <script src="bower_components/angularAudioRecorder/dist/angular-audio-recorder.min.js"></script>
+    <script src="bower_components/lamejs/lame.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 <!-- <script src="/styles/plugins/iCheck/icheck.min.js"></script> -->

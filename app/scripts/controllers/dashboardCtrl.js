@@ -13,7 +13,7 @@
 
 angular.module('sampleApp1App')
   .controller('dashboardCtrl',function ($scope){
-    $scope.contentCollapse = true;
+   // $scope.contentCollapse = false;
     $scope.test_toggle = function(){
       $scope.contentCollapse = !$scope.contentCollapse;
     };
