@@ -21,7 +21,3 @@ angular
     'angularAudioRecorder'
   ]);
 
-/*
-Exception: ReferenceError: angular is not defined
-@Scratchpad/1:11:1
-*/

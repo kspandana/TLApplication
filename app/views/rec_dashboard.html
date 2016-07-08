@@ -247,21 +247,17 @@
       </div>
       <div id="RecentlyListened" class="panel-collapse collapse in">
         <ul class="list-group">
-          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">Number system</a></li>
-          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">History of Mankind</a></li>
-          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">Vyakaran</a></li>
+          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)" href="#/rec_dashboard">Number system</a></li>
+          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)" href="#/rec_dashboard">History of Mankind</a></li>
+          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)" href="#/rec_dashboard">Vyakaran</a></li>
         </ul>
-        <div class="panel-footer"><a data-toggle="collapse" href="#RecentlyListenedsub" id="dots" onClick="toggle_visibility();"><span class="glyphicon glyphicon-option-horizontal"></span></a></div>
-
-
-        <div id="RecentlyListenedsub" class="panel-collapse collapse">
-        <ul class="list-group">
-          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">Number system1</a></li>
-          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">History of Mankind2</a></li>
-          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">Vyakaran3</a></li>
+        <ul class="list-group" ng-show="RecentlyListenedsub">
+          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)" href="#/rec_dashboard">Number system1</a></li>
+          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)" href="#/rec_dashboard">History of Mankind2</a></li>
+          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)" href="#/rec_dashboard">Vyakaran3</a></li>
         </ul>
+        <div class="panel-footer"><a data-toggle="collapse" id="dots" ng-click="toggle_visibility()"><span class="glyphicon glyphicon-option-horizontal"></span></a></div>
 
-      </div>
       </div>
 
       <div class="panel-heading list-group-item">
@@ -271,20 +267,18 @@
       </div>
       <div id="MyLatestRecordings" class="panel-collapse collapse in">
         <ul class="list-group">
-          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">Earth</a></li>
-          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">Magic of Numbers</a></li>
-          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">Alice has fun</a></li>
+          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)" href="#/rec_dashboard">Earth</a></li>
+          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)" href="#/rec_dashboard">Magic of Numbers</a></li>
+          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)" href="#/rec_dashboard">Alice has fun</a></li>
         </ul>
-        <div class="panel-footer"><a data-toggle="collapse" href="#MyLatestRecordingssub"><span class="glyphicon glyphicon-option-horizontal"></span></a></div>
-
-        <div id="MyLatestRecordingssub" class="panel-collapse collapse">
-        <ul class="list-group">
-          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">Earth 1</a></li>
-          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">Magic of Numbers 2</a></li>
-          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">Alice has fun 3</a></li>
+        <ul class="list-group" ng-show="MyLatestRecordingssub">
+          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)" href="#/rec_dashboard">Earth 1</a></li>
+          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)" href="#/rec_dashboard">Magic of Numbers 2</a></li>
+          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)" href="#/rec_dashboard">Alice has fun 3</a></li>
         </ul>
+        <div class="panel-footer"><a data-toggle="collapse" ng-click="toggle_latest()"><span class="glyphicon glyphicon-option-horizontal"></span></a></div>
 
-      </div>
+
       </div>
 
       <div class="panel-heading list-group-item">
@@ -294,20 +288,17 @@
       </div>
       <div id="RecentlySharedWithMe" class="panel-collapse collapse in">
         <ul class="list-group">
-          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">Earth</a></li>
-          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">Magic of Numbers</a></li>
-          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">Alice has fun</a></li>
+          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)" href="#/rec_dashboard">Earth</a></li>
+          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)" href="#/rec_dashboard" >Magic of Numbers</a></li>
+          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)" href="#/rec_dashboard">Alice has fun</a></li>
         </ul>
-        <div class="panel-footer"><a data-toggle="collapse" href="#RecentlySharedWithMesub"><span class="glyphicon glyphicon-option-horizontal"></span></a></div>
-
-        <div id="RecentlySharedWithMesub" class="panel-collapse collapse">
-        <ul class="list-group">
-          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">Earth 1</a></li>
-          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">Magic of Numbers 2</a></li>
-          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)">Alice has fun 3</a></li>
+        <ul class="list-group" ng-show="RecentlySharedWithMesub">
+          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)" href="#/rec_dashboard">Earth 1</a></li>
+          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)" href="#/rec_dashboard">Magic of Numbers 2</a></li>
+          <li class="list-group-item"><a  data-toggle="tooltip" data-placement="right" title="Samit: History->Freedom Fighters (2:45 Min)" href="#/rec_dashboard">Alice has fun 3</a></li>
         </ul>
+        <div class="panel-footer"><a data-toggle="collapse" ng-click="toggle_shared()"><span class="glyphicon glyphicon-option-horizontal"></span></a></div>
 
-      </div>
       </div>
 
     </div>

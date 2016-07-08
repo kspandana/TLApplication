@@ -41,3 +41,6 @@ height: 100%;
 .table a{
   cursor:pointer;
 }
+li{
+  cursor:pointer;
+}

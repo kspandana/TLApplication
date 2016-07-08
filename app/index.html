@@ -1,5 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-  "http://www.w3.org/TR/html4/strict.dtd">
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -11,21 +10,15 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
-    <link type="text/css" href="style.css" />
-    <!--[If IE]>
-    <link type="text/css" href="IEHacks.css" />
-    <![endif]-->
-    <!--[if !IE]>
-    <link type="text/css" href="NonIEHacks.css" />
-    <![endif]-->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
      <link rel="stylesheet" href="/styles/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/parentHome.css" />
-    <link rel="stylesheet" href="/styles/fonts/css/font-awesome.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="/styles/fonts/css/ionicons.min.css">
+    <link rel="stylesheet" href="styles/audio/player.css"/>
+    <!--<link rel="stylesheet" href="/styles/fonts/css/font-awesome.min.css">-->
+  <!--&lt;!&ndash; Ionicons &ndash;&gt;-->
+  <!--<link rel="stylesheet" href="/styles/fonts/css/ionicons.min.css">-->
   <!-- Theme style -->
   <link rel="stylesheet" href="/styles/dist/css/AdminLTE.min.css">
   <!-- iCheck -->
@@ -132,7 +125,6 @@
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="bower_components/wavesurfer.js/dist/wavesurfer.min.js"></script>
     <script src="bower_components/angularAudioRecorder/dist/angular-audio-recorder.min.js"></script>
-    <script src="bower_components/lamejs/lame.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 <!-- <script src="/styles/plugins/iCheck/icheck.min.js"></script> -->
@@ -183,6 +175,7 @@
     <script src="scripts/controllers/edit.js"></script>
     <script src="scripts/controllers/registerCtrl.js"></script>
     <script src="scripts/controllers/dashboardCtrl.js"></script>
+    <script src="scripts/controllers/rec_dashboard.js"></script>
     <script src="scripts/controllers/chapterPage.js"></script>
         <script src="scripts/services/authenticationService.js"></script>
         <script src="scripts/utils/global.js"></script>

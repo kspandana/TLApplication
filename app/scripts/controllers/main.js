@@ -7,12 +7,11 @@
  * # MainCtrl
  * Controller of the sampleApp1App
  */
-/*jshint undef: true,  $scope : true, registerParent: true, unused:true, strict: true*/
 /*globals Global: true*/
 
 angular.module('sampleApp1App')
-  .controller('MainCtrl',  ['$scope', '$rootScope', '$location', 'AuthenticationService',
-    function ($scope, $rootScope, $location, AuthenticationService ) {
+  .controller('MainCtrl',  ['$scope', '$rootScope', '$location', '$window', 'AuthenticationService',
+    function ($scope, $rootScope, $location, $window, AuthenticationService ) {
         // reset login status
        AuthenticationService.ClearCredentials();
 
@@ -35,8 +34,6 @@ angular.module('sampleApp1App')
       $scope.register = function () {
        $scope.registerParent = true;
       };
-
-
 
     }])
     .config(['$routeProvider', function ($routeProvider) {
@@ -86,12 +83,9 @@ angular.module('sampleApp1App')
         controller: 'recDashboardCtrl',
         templateUrl: 'views/rec_dashboard.html'
       })
-
-
-
-
       .otherwise({ redirectTo: '/login' });
-}])
+
+    }])
 
 .run(['$rootScope', '$location', '$cookieStore', '$http',
     function ($rootScope, $location, $cookieStore, $http) {
@@ -106,7 +100,7 @@ angular.module('sampleApp1App')
 
             // redirect to login page if not logged in
             if ($location.path() !== '/login' && !$rootScope.globals.currentUser) {
-                if($scope.registerParent === true){
+                if($rootScope.registerParent === true){
                   $location.path('/register');
                 }
 

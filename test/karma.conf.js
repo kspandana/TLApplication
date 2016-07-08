@@ -42,7 +42,6 @@ module.exports = function(config) {
       'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
       'bower_components/wavesurfer.js/dist/wavesurfer.min.js',
       'bower_components/angularAudioRecorder/dist/angular-audio-recorder.min.js',
-      'bower_components/lamejs/lame.min.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',
