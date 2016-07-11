@@ -43,6 +43,10 @@ angular.module('sampleApp1App')
             controller: 'MainCtrl',
             templateUrl: 'views/main.html'
         })
+      .when('/parent', {
+        controller: 'parentCtrl',
+        templateUrl: 'views/Parent_HomePage.html'
+      })
         .when('/dashboard', {
             controller: 'dashboardCtrl',
             templateUrl: 'views/dashboard.html'

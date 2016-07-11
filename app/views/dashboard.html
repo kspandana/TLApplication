@@ -22,11 +22,11 @@
                 <li> <a href="#"> <i class="fa fa-user text-red"></i> Arthur and the Sword </a> </li>
               </ul>
             </li>
-            <li class="footer"><a href="#">View all</a></li>
+            <li class="footer"><a>View all</a></li>
           </ul>
         </li>
         <!-- Tasks: style can be found in dropdown.less -->
-        <li class="dropdown tasks-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-flag-o"><span class="glyphicon glyphicon-user"></span></i> <span class="label label-danger">9</span> </a>
+        <li class="dropdown tasks-menu"> <a class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-flag-o"><span class="glyphicon glyphicon-user"></span></i> <span class="label label-danger">9</span> </a>
           <ul class="dropdown-menu">
             <li class="header">You have 9 New Connect Requests</li>
             <li>
@@ -58,10 +58,10 @@
                 <!-- end task item -->
               </ul>
             </li>
-            <li class="footer"> <a href="#">View all New Connect Requests</a> </li>
+            <li class="footer"> <a>View all New Connect Requests</a> </li>
           </ul>
         </li>
-        <li class="dropdown tasks-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-flag-o"><span class="glyphicon glyphicon-user"></span></i> <span class="label label-danger">5</span> </a>
+        <li class="dropdown tasks-menu"> <a class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-flag-o"><span class="glyphicon glyphicon-user"></span></i> <span class="label label-danger">5</span> </a>
           <ul class="dropdown-menu">
             <li class="header">You have 5 Pending Requests</li>
             <li>
@@ -93,28 +93,26 @@
                 <!-- end task item -->
               </ul>
             </li>
-            <li class="footer"> <a href="#">View all Connect Requests</a> </li>
+            <li class="footer"> <a>View all Connect Requests</a> </li>
           </ul>
         </li>
         <!-- User Account: style can be found in dropdown.less -->
-        <li class="dropdown user user-menu">  <button href="#contentCollapse" class="list-group-item strong" data-toggle="collapse" aria-controls="collapseOne" style ="background-color:#3C8DBC;border-color:#3C8DBC;color: #FFF ">
-          <img src="/styles/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-          <span class="hidden-xs">Rama Krishnan</span> </button>
-          <ul class="dropdown-menu" id="contentCollapse">
+        <li class="dropdown user user-menu"> <a class="dropdown-toggle" data-toggle="dropdown"> <img src="styles/dist/img/user2-160x160.jpg" class="user-image" alt="User Image"> <span class="hidden-xs">Rama Krishnan</span> </a>
+          <ul class="dropdown-menu">
             <!-- User image -->
-            <li class="user-header"> <img src="/styles/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            <li class="user-header"> <img src="styles/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
               <p> Rama Krishnan - Parent <small>Member since Nov. 2012</small> </p>
             </li>
             <!-- Menu Body -->
             <!-- Menu Footer-->
             <li class="user-footer">
-              <div class="pull-left"> <a class="btn btn-default btn-flat">My  Connections</a> </div>
-              <div> <a class="btn btn-default btn-flat">Profile</a> <a href="#/login" class="btn btn-danger"><span class="glyphicon glyphicon-log-out"></span></a> </div>
+              <div class="pull-left"> <a href="#" class="btn btn-default btn-flat">My  Connections</a> </div>
+              <div> <a href="#" class="btn btn-default btn-flat">Profile</a> <a href="#/login" class="btn btn-danger"><span class="glyphicon glyphicon-log-out"></span></a> </div>
             </li>
           </ul>
-        </li>
+         </li>
         <!-- Control Sidebar Toggle Button -->
-        <li> <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a> </li>
+        <li> <a data-toggle="control-sidebar"><i class="fa fa-gears"></i></a> </li>
       </ul>
     </div>
   </nav>
@@ -137,8 +135,8 @@
   <section class="content">
     <!-- Small boxes (Stat box) -->
     <div class="row">
-      <div class="col-xs-9">
-        <div class="col-lg-4 col-xs-6">
+      <div class="col-md-9">
+        <div class="col-lg-4 col-md-6">
           <div class="small-box bg-aqua">
             <div class="inner">
             <a href="#/chapterPage" class="btn-info">
@@ -149,7 +147,7 @@
 
              </div>
         </div>
-        <div class="col-lg-4 col-xs-6">
+        <div class="col-lg-4 col-md-6">
           <!-- small box -->
           <div class="small-box bg-green">
             <div class="inner">
@@ -159,7 +157,7 @@
               </a> </div>
           </div>
         </div>
-        <div class="col-lg-4 col-xs-6">
+        <div class="col-lg-4 col-md-6">
           <!-- small box -->
           <div class="small-box bg-yellow">
             <div class="inner">
@@ -170,7 +168,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-xs-6">
+        <div class="col-lg-4 col-md-6">
           <!-- small box -->
           <div class="small-box bg-red">
             <div class="inner">
@@ -180,7 +178,7 @@
               </a> </div>
           </div>
         </div>
-        <div class="col-lg-4 col-xs-6">
+        <div class="col-lg-4 col-md-6">
           <!-- small box -->
           <div class="small-box  bg-light-blue-gradient">
             <div class="inner">
@@ -190,7 +188,7 @@
               </a> </div>
           </div>
         </div>
-        <div class="col-lg-4 col-xs-6">
+        <div class="col-lg-4 col-md-6">
           <!-- small box -->
           <div class="small-box bg-green-gradient">
             <div class="inner">
@@ -201,7 +199,9 @@
           </div>
         </div>
       </div>
-      <div class="col-xs-3">
+      <div class="col-md-3">
+        <div class="box">
+          <div class="box-body">
         <div class="container">
   <h3>Across All Subjects</h3>
   <div class="panel-group">
@@ -274,12 +274,18 @@
 
 </div>
       </div>
+        </div>
+      </div>
       <!-- /.row -->
       <!-- Main row -->
       <!-- /.row (main row) -->
       <!-- /.content -->
     </div>
   </section>
+  <!--<script>-->
+  <!--$.widget.bridge('uibutton', $.ui.button);-->
+  <!--</script>-->
+
   <!-- /.content-wrapper -->
   <footer class="main-footer"> Copyright &copy; 2016 Teach and Learn  All rights reserved. </footer>
   <div class="control-sidebar-bg"></div>
@@ -292,7 +298,3 @@
 <!--&lt;!&ndash; jQuery UI 1.11.4 &ndash;&gt;-->
 <!--<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>-->
 <!--&lt;!&ndash; Resolve conflict in jQuery UI tooltip with Bootstrap tooltip &ndash;&gt;-->
-<script>
-  $.widget.bridge('uibutton', $.ui.button);
-</script>
-

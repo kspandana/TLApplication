@@ -16,11 +16,14 @@
 
 angular.module('sampleApp1App')
   .controller('chapterPageCtrl',function ($scope){
-    $scope.contentCollapse = true;
-    $scope.test_toggle = function(){
-      $scope.contentCollapse = !$scope.contentCollapse;
+   // $scope.contentCollapse = true;
+    $scope.collapseOne = false;
+
+    $scope.test = function(){
+      $scope.collapseOne = !$scope.collapseOne;
 
     };
+
     $scope.toggle_visibility = function () {
       $scope.RecentlyListenedsub = !$scope.RecentlyListenedsub ;
     };

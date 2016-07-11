@@ -14,9 +14,16 @@
 angular.module('sampleApp1App')
   .controller('dashboardCtrl',function ($scope){
    // $scope.contentCollapse = false;
-    $scope.test_toggle = function(){
-      $scope.contentCollapse = !$scope.contentCollapse;
+    $scope.collapseOne = false;
+
+    $scope.test = function(){
+      $scope.collapseOne = !$scope.collapseOne;
+
     };
+
+    // $scope.test_toggle = function(){
+    //   $scope.contentCollapse = !$scope.contentCollapse;
+    // };
     $scope.toggle_visibility = function () {
       $scope.RecentlyListenedsub = !$scope.RecentlyListenedsub ;
     };

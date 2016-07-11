@@ -13,6 +13,12 @@ angular.module('sampleApp1App')
   	//$scope.setBodyClass('hold-transition');
     console.log("Loaded");
     $scope.timeLimit = 10;
+    $scope.collapseOne = false;
+
+    $scope.test = function(){
+      $scope.collapseOne = !$scope.collapseOne;
+
+    };
 
     $scope.toggle_visibility = function () {
       $scope.RecentlyListenedsub = !$scope.RecentlyListenedsub ;
@@ -34,6 +40,6 @@ angular.module('sampleApp1App')
   .config(function (recorderServiceProvider) {
   recorderServiceProvider
     .forceSwf(false)
-   //.setSwfUrl('/lib/recorder.swf')
+   .setSwfUrl('/lib/recorder.swf')
     .withMp3Conversion(true);
 });

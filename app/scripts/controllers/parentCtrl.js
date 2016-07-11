@@ -19,12 +19,12 @@ angular.module('sampleApp1App')
       $scope.studentDetails = response;
 
     });
-    //$scope.collapseOne = false;
+    $scope.collapseOne = false;
 
-    // $scope.test = function(){
-    //     $scope.collapseOne = !$scope.collapseOne;
-    //
-    // };
+    $scope.test = function(){
+        $scope.collapseOne = !$scope.collapseOne;
+
+    };
 
     $scope.hoverIn = function(){
       $scope.hoverEdit = true;

@@ -11,11 +11,11 @@
 
           <!-- Notifications: style can be found in dropdown.less -->
           <li class="dropdown notifications-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-bell-o"><span class="glyphicon glyphicon-flag"></span></i>
               <span class="label label-danger">10</span>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" role="menu">
               <li class="header">You have 10 New topic requests</li>
               <li>
                 <!-- inner menu: contains the actual data -->
@@ -52,7 +52,7 @@
           </li>
           <!-- Tasks: style can be found in dropdown.less -->
           <li class="dropdown tasks-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-flag-o"><span class="glyphicon glyphicon-user"></span></i>
               <span class="label label-danger">9</span>
             </a>
@@ -109,7 +109,7 @@
             </ul>
           </li>
           <li class="dropdown tasks-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-flag-o"><span class="glyphicon glyphicon-user"></span></i>
               <span class="label label-danger">5</span>
             </a>
@@ -166,29 +166,23 @@
             </ul>
           </li>
           <!-- User Account: style can be found in dropdown.less -->
-          <li class="dropdown user user-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="/styles/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Rama Krishnan</span>
-            </a>
+          <li class="dropdown user user-menu"> <a class="dropdown-toggle" data-toggle="dropdown"> <img src="styles/dist/img/user2-160x160.jpg" class="user-image" alt="User Image"> <span class="hidden-xs">Rama Krishnan</span> </a>
             <ul class="dropdown-menu">
               <!-- User image -->
-              <li class="user-header"> <img src="/styles/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+              <li class="user-header"> <img src="styles/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                 <p> Rama Krishnan - Parent <small>Member since Nov. 2012</small> </p>
               </li>
               <!-- Menu Body -->
-
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left"> <a href="#" class="btn btn-default btn-flat">My  Connections</a> </div>
-                  <div> <a href="#" class="btn btn-default btn-flat">Profile</a> <a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-log-out"></span></a> </div>
-
+                <div> <a class="btn btn-default btn-flat">Profile</a> <a href="#/login" class="btn btn-danger"><span class="glyphicon glyphicon-log-out"></span></a> </div>
               </li>
             </ul>
           </li>
           <!-- Control Sidebar Toggle Button -->
           <li>
-            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+            <a data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
           </li>
         </ul>
       </div>
@@ -205,7 +199,7 @@
       <h1>Chapters  </h1>
     </section>
 <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i>Class VI </a></li>
+        <li><a><i class="fa fa-dashboard"></i>Class VI </a></li>
           <li><a href="#dashboard"><i class="fa fa-dashboard"></i>Subjects </a></li>
            <li class="active">English</li>
       </ol>
@@ -213,11 +207,11 @@
     <section class="content">
       <!-- Small boxes (Stat box) -->
       <div class="row">
-      <div class="col-xs-9">
+      <div class="col-md-9">
         <div class="box">
 
             <div class="box-body">
-             <div class="col-xs-6">
+             <div class="col-md-6">
               <a class="btn btn-block btn-social btn-twitter"  href="#/topics">
                 <span class="glyphicon glyphicon-list-alt"></span> Down the Rabbit-hole
               </a>
@@ -248,7 +242,7 @@
 
              </div>
 
-            <div class="col-xs-6">
+            <div class="col-md-6">
               <a class="btn btn-block btn-social btn-twitter"  href="#/topics">
                 <span class="glyphicon glyphicon-list-alt"></span> The Lotus
               </a>
@@ -284,7 +278,9 @@
 
         </div>
 
-        <div class="col-xs-3">
+        <div class="col-md-3">
+          <div class="box">
+            <div class="box-body">
             <div class="container">
   <h3>In this Subject</h3>
   <div class="panel-group">
@@ -355,6 +351,8 @@
 
 
 </div>
+            </div>
+          </div>
       </div>
       <!-- /.row -->
       <!-- Main row -->

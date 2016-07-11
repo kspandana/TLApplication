@@ -137,7 +137,7 @@
 
           <!-- Notifications: style can be found in dropdown.less -->
           <li class="dropdown notifications-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-bell-o"><span class="glyphicon glyphicon-flag"></span></i>
               <span class="label label-danger">10</span>
             </a>
@@ -178,7 +178,7 @@
           </li>
           <!-- Tasks: style can be found in dropdown.less -->
           <li class="dropdown tasks-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-flag-o"><span class="glyphicon glyphicon-user"></span></i>
               <span class="label label-danger">9</span>
             </a>
@@ -235,7 +235,7 @@
             </ul>
           </li>
           <li class="dropdown tasks-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-flag-o"><span class="glyphicon glyphicon-user"></span></i>
               <span class="label label-danger">5</span>
             </a>
@@ -292,29 +292,23 @@
             </ul>
           </li>
           <!-- User Account: style can be found in dropdown.less -->
-          <li class="dropdown user user-menu">
-            <a class="dropdown-toggle" data-toggle="dropdown">
-              <img src="/styles/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Rama Krishnan</span>
-            </a>
+          <li class="dropdown user user-menu"> <a class="dropdown-toggle" data-toggle="dropdown"> <img src="styles/dist/img/user2-160x160.jpg" class="user-image" alt="User Image"> <span class="hidden-xs">Rama Krishnan</span> </a>
             <ul class="dropdown-menu">
               <!-- User image -->
-              <li class="user-header"> <img src="/styles/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+              <li class="user-header"> <img src="styles/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                 <p> Rama Krishnan - Parent <small>Member since Nov. 2012</small> </p>
               </li>
               <!-- Menu Body -->
-
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left"> <a href="#" class="btn btn-default btn-flat">My  Connections</a> </div>
-                <div> <a href="#" class="btn btn-default btn-flat">Profile</a> <a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-log-out"></span></a> </div>
-
+                <div> <a href="#" class="btn btn-default btn-flat">Profile</a> <a href="#/login" class="btn btn-danger"><span class="glyphicon glyphicon-log-out"></span></a> </div>
               </li>
             </ul>
           </li>
           <!-- Control Sidebar Toggle Button -->
           <li>
-            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+            <a data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
           </li>
         </ul>
       </div>
@@ -345,13 +339,15 @@
       <!-- Small boxes (Stat box) -->
       <div class="row">
 
-        <div class="col-xs-2">
+        <div class="col-md-2">
+          <div class="box">
+            <div class="box-body">
           <section class="sidebar">
             <!-- Sidebar user panel -->
             <ol class="breadcrumb">
 
-              <li class="active"><a href="#"><span class="glyphicon glyphicon-eject"></span> </a>Filter</li>
-              <li><a href="#"><i class="fa fa-dashboard"></i>Show All</a></li>
+              <li class="active"><a><span class="glyphicon glyphicon-eject"></span> </a>Filter</li>
+              <li><a><i class="fa fa-dashboard"></i>Show All</a></li>
 
             </ol>
             <!-- search form -->
@@ -390,10 +386,12 @@
               </label>
             </div>
           </section>
+            </div>
+        </div>
         </div>
         <!-- /.sidebar -->
 
-        <div class="col-xs-7">
+        <div class="col-md-7">
           <div class="box">
 
             <div class="box-body">
@@ -596,7 +594,9 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-3">
+        <div class="col-md-3">
+          <div class="box">
+            <div class="box-body">
           <div class="container">
             <h3>In this Chapter</h3>
             <div class="panel-group">
@@ -664,6 +664,8 @@
             </div>
           </div>
         </div>
+      </div>
+        </div>
         <!-- /.row -->
         <!-- Main row -->
         <!-- /.row (main row) -->
@@ -695,7 +697,7 @@
           <!-- /.row -->
           <!-- Main row -->
           <div class="row">
-            <div class="col-xs-12">
+            <div class="col-md-12">
               <div class="box">
                 <div class="box-header">
                   <h3 class="box-title">Child Name: Rohit</h3>
@@ -747,6 +749,8 @@
                       </div>
                       <div class="col-md-3">
                         <div class="btn-group">
+                          <button type="button" class="btn btn-app" ng-click="recorder.status.isPlaying ? recorder.playbackPause() : recorder.playbackResume()" ng-disabled="recorder.status.isRecording || !recorder.audioModel">{{recorder.status.isStopped || recorder.status.isPaused ? 'Play' : 'Pause'}}<span class="glyphicon glyphicon-play"></span>
+                          </button>
                           <button type="button" class="btn btn-app" ng-click="recorder.startRecord()" ng-disabled="recorder.status.isDenied === true || recorder.status.isRecording"><img src="/styles/dist/img/microphone.png"></button>
                           <button type="button" class="btn btn-app" ng-click="recorder.stopRecord()" type="button" ng-disabled="recorder.status.isRecording === false"><span class="glyphicon glyphicon-stop"></span></button>
                         </div>
@@ -867,7 +871,7 @@
           <!-- /.row -->
           <!-- Main row -->
           <div class="row">
-            <div class="col-xs-12">
+            <div class="col-md-12">
               <div class="box">
                 <div class="box-header">
                   <h3 class="box-title">Request for Recording</h3>
@@ -987,7 +991,7 @@
           <!-- /.row -->
           <!-- Main row -->
           <div class="row">
-            <div class="col-xs-12">
+            <div class="col-md-12">
               <div class="box">
 
                 <!-- /.box-header -->
@@ -1124,7 +1128,7 @@
 </script>
 <!-- jQuery UI 1.11.4 -->
 
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-  $.widget.bridge('uibutton', $.ui.button);
-</script>
+<!--&lt;!&ndash; Resolve conflict in jQuery UI tooltip with Bootstrap tooltip &ndash;&gt;-->
+<!--<script>-->
+  <!--$.widget.bridge('uibutton', $.ui.button);-->
+<!--</script>-->

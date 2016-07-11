@@ -123,7 +123,7 @@ a[id^="btn"]:last-child { margin-left:-4px; }
 a[id^="btn"]:hover,a[id^="btn"]:active { background-color:rgba(255, 255, 255, 0.15); }
 a[id^="btn"]::-moz-focus-inner { border:0; padding:0; }
 /* IE 9 */
-html[data-useragent*="MSIE 9.0"] audio { margin-left:9px; outline:none; width: 660px; }
+html[data-useragent*="MSIE 9.0"] audio { margin-left:9px; outline:none; width: 656px; }
 html[data-useragent*="MSIE 9.0"] #audiowrap { background-color:#fff; }
 html[data-useragent*="MSIE 9.0"] #tracks { min-height:57px; top:0px; }
 html[data-useragent*="MSIE 9.0"] a[id^="btn"] { background-color:#000; }
