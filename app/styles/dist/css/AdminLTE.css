@@ -1514,7 +1514,7 @@ a:focus {
     text-align: center;
   }
   .small-box .icon {
-    display: none;
+    display: block;
   }
   .small-box p {
     font-size: 12px;
